@@ -77,7 +77,6 @@ if __name__ == "__main__":
         names=feature_columns_names + [label_column],
         dtype=merge_two_dicts(feature_columns_dtype, label_column_dtype),
     )
-    df.head()
     os.unlink(fn)
 
     logger.debug("Defining transformers.")
